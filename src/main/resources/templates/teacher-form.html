@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/teacher/register}" method="post" th:object="${teacher}">
+    <input type="hidden" th:field="*{id}">
+    First Name: <input type="text" th:field="*{firstName}"/> <br>
+    Last Name: <input type="text" th:field="*{lastName}"/> <br>
+    City: <input type="text" th:field="*{city}"/> <br>
+    Street: <input type="text" th:field="*{street}"/> <br>
+
+
+
+    <button type="submit">Register</button>
+</form>
+
+
+
+</body>
+</html>

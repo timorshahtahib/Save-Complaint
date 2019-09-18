@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/comita/register}" method="post" th:object="${comita}">
+    <input type="hidden" th:field="*{id}">
+    Comita Name: <input type="text" th:field="*{firstName}"/> <br>
+    <button type="submit">Register</button>
+</form>
+
+
+
+</body>
+</html>
